@@ -1,0 +1,39 @@
+<div class="main">
+  <nav class="navbar navbar-light alert-primary">
+    <div class="justify-content-start">
+      <button type="button" class="btn btn-outline-secondary" (click)="navigationActions(true)">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <p class="navbar-brand mt-2 ml-3 title"><span style="opacity: 0.5;">Jaynard</span><span>Senilla</span></p>
+    </div>
+    <ul class="nav">
+      <li>
+        <a class="nav-link btn btn-outline-secondary"><span class="fa fa-phone"></span> <span class="textForIcon"> Contact</span></a>
+      </li>
+      <li>
+        <a class="nav-link btn btn-outline-secondary"><span class="fa fa-envelope"></span> <span class="textForIcon"> Message</span></a>
+      </li>
+      <li>
+        <a class="nav-link btn btn-outline-secondary"><span class="fa fa-image"></span> <span class="textForIcon"> Images</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div [style.display]="!navigationShow? 'none':'block'" class="sidenav alert-info">
+    <div class="container">
+      <img class="rounded-circle ml-2" style="width: 80%;" src="../assets/images/logo.jfif" alt="Logo">
+      <a href="javascript:void(0)" class="closebtn" (click)="navigationActions(false)"><span class="fa fa-window-close"></span></a>
+    </div>
+    <div class="text-center">
+      <span>𝕵𝕾</span>&nbsp;<span>𝓒𝓸𝓶𝓹𝓪𝓷𝔂</span>
+    </div>
+    <hr>
+    <div class="btns">
+      <a *ngFor="let button of buttons" class="ml-2" href={{button.route}}>
+        <button style="width: 90%;" class="btn btn-outline-primary mb-2">
+          <i class="{{button.icon}}" aria-hidden="true"></i>&nbsp; {{button.text}}</button>
+      </a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

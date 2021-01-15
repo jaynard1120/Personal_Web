@@ -1,0 +1,42 @@
+  .form-control input{
+    width: 50%;
+  }
+  .logo{
+    margin-top: -15%;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background: white;
+  }
+  .logo img{
+    width: 100%;
+    padding: 10px;
+  }
+  .input-group{
+    width: 80%;
+    margin: auto;
+  }
+  .container{
+    margin-top: -20%;
+  }
+  .login{
+    font-size: larger;
+    margin-left: 40%;
+  }
+  .cover{
+    width: 50%;
+    margin: auto;
+    margin-top: 15%;
+    height: 50%;
+  }
+  .text{
+    font-size: larger;
+    color: black;
+    font-weight: bolder;
+  }
+  @media only screen and (max-width: 600px) {
+    .login{font-size: large;}
+    .cover{margin-top: 35%;width: 85%;}
+    .container{ margin-top: 1%;}
+  }

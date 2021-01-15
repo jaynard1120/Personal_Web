@@ -1,0 +1,54 @@
+<!-- <div class="card" style="min-width: 20%;max-width:30%;margin: auto;">
+    <img class="card-img-top"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD2pOwfYiHafOWdxnU84CQbfSXsL5gAWAreA&usqp=CAU"
+        alt="Logo konohay">
+    <div class="card-body">
+        <h5 class="card-title">Work Work Work</h5>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text fa fa-user" id="basic-addon1"></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text fa fa-key" id="basic-addon2"></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Password" aria-label="Password"
+                aria-describedby="basic-addon1">
+        </div>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div> -->
+
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" autocomplete="off" novalidate
+  [ngStyle]="{display: loggedIn? 'none':'block'}">
+  <div class="alert-primary cover rounded border">
+    <div class="logo">
+      <img class=" rounded-circle" src="../assets/images/logo.jfif" alt="Logo">
+    </div>
+    <hr>
+    <div class="mb-3 ml-3 text">
+      <span style="opacity: 0.5;">𝓙𝓪𝔂𝓷𝓪𝓻𝓭</span><span>|</span><span>𝓢𝓮𝓷𝓲𝓵𝓵𝓪</span>
+    </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text fa fa-user"></span>
+      </div>
+      <input type="text" [(ngModel)]="userName" class="form-control" placeholder="Username" name="userName">
+    </div>
+
+    <div class="input-group mt-2">
+      <div class="input-group-prepend">
+        <span class="input-group-text fa fa-key"></span>
+      </div>
+      <input type="password" [(ngModel)]="password" class="form-control" placeholder="Password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary mt-3 mb-3 login">Login </button>
+  </div>
+</form>

@@ -1,0 +1,79 @@
+.navbar-brand{
+  font-weight: bold;
+  font-size: 150%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  /* transition: 0.5s; */
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+}
+
+.form-control input{
+  width: 50%;
+}
+
+.input-group{
+  width: 80%;
+  margin: auto;
+}
+.container{
+  margin-top: -20%;
+}
+.container img{
+  align-self: center;
+}
+.cover{
+  width: 50%;
+  margin: auto;
+  margin-top: 15%;
+  height: 50%;
+}
+li .nav-link{
+  color: #818181;
+  cursor: pointer;
+  float: left;
+}
+li .nav-link:hover{
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .sidenav {padding-top: 15px;width: 40%;}
+  .sidenav a {font-size: 18px;}
+  .title{font-size: small;}
+  .cover{margin-top: 35%;width: 85%;}
+  .container{ margin-top: 1%;}
+  .textForIcon{display: none;}
+  .sidenav .closebtn{font-size: 25px;}
+  li .nav-link{border: none;font-size: smaller;}
+}

@@ -1,0 +1,14 @@
+<h4 class="ml-5 mt-3">My Hobbies</h4>
+<hr>
+<div class="mainAbout">
+  <div class="card mt-3" *ngFor="let hobby of hobbies">
+    <img class="card-img-top" src="{{hobby.image}}" alt="Hobby">
+    <div class="card-body">
+      <h5 class="card-title">{{hobby.title}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.
+      </p>
+      <a href="{{hobby.route}}" class="btn btn-primary">Explore More</a>
+    </div>
+  </div>
+</div>
