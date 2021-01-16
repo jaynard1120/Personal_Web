@@ -67,16 +67,7 @@ li .nav-link{
 li .nav-link:hover{
   color: black;
 }
-.footer{
-  font-size: 150%;
-  font-weight: 500;
-}
-.row{
-  float: left;
-}
-.detail{
-  width: 100%;
-}
+
 @media only screen and (max-width: 600px) {
   .sidenav {padding-top: 15px;width: 40%;}
   .sidenav a {font-size: 18px;}
@@ -85,7 +76,6 @@ li .nav-link:hover{
   .container{ margin-top: 1%;}
   .textForIcon{display: none;}
   .sidenav .closebtn{font-size: 25px;}
-  .footer{font-size: small;}
-  .detail{font-size: x-small;}
   li .nav-link{border: none;font-size: smaller;}
+  .navbar-toggler-icon{font-size: small;}
 }

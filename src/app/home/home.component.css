@@ -3,3 +3,22 @@ img{
     height: 70vh;
     opacity: 1;
 }
+.footer{
+    font-size: 150%;
+    font-weight: 500;
+  }
+  .row{
+    float: left;
+  }
+  .detail{
+    width: 100%;
+  }
+  @media screen and (max-width: 720px) {
+    .footer{font-size: large;}
+    .detail{font-size: small;}
+  }
+
+  @media screen and (max-width: 620px) {
+    .footer{font-size: small;}
+    .detail{font-size: xx-small;}
+  }
