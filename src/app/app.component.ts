@@ -14,8 +14,8 @@ export class AppComponent {
   praise = 'Good Work!';
   buttons = [
     {icon: 'fa fa-home', text: 'Home', route: ''},
-    {icon: 'fa fa-sign', text: 'Login', route: 'login'},
-    {icon: 'fa fa-exclamation', text: 'About', route: 'about'}
+    {icon: 'fa fa-sign-in', text: 'Login', route: 'login'},
+    {icon: 'fa fa-exclamation-circle', text: 'About', route: 'about'}
   ]
   
 
